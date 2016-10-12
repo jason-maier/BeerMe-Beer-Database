@@ -1,0 +1,26 @@
+<div class='container'>
+	<div class='row' id='beercard' ng-repeat='drink in drinks | limitTo: 5'>
+	<h1 id='beername' class='center' ng-model='name' ng-click='searchme()'> {{ drink.name }} </h1>
+	<div class="col s4 center">
+		<img ng-click='getBeer()' src='http://icons.iconarchive.com/icons/flat-icons.com/flat/512/Beer-icon.png' 
+		class='beericon' />
+	</div>
+	<div class="col s8" id='thick'>
+		<p> <span class='descriptor'> ABV : </span>
+			<span ng-model='abv' data-ng-if="drink.abv"> {{drink.abv}} %  </span>
+			<span ng-model='abv' data-ng-if="!drink.abv && !drink.style.abvMax"> 0  </span>
+			<span ng-model='abv' data-ng-if="!drink.abv"> {{drink.style.abvMax}} %  </span>   
+			   </p>
+		<p> <span class='descriptor'> IBU : </span>
+			<span ng-model='ibu' data-ng-if="drink.ibu"> {{drink.ibu}}   </span>
+			<span ng-model='ibu' data-ng-if="!drink.ibu && !drink.style.ibuMax"> 0  </span> 
+			<span ng-model='ibu' data-ng-if="!drink.ibu"> {{drink.style.ibuMax}}  </span>
+			 </p>
+		<p> <span class='descriptor' ng-model='type'> Beer Type : </span> {{drink.style.name}} </p>
+		<p ng-model='description'>  
+			<span data-ng-if="drink.description"> {{drink.description}} </span>  
+			<span data-ng-if="!drink.description"> {{drink.style.description}} </span> 
+		</p>
+	</div>
+	</div>
+</div>

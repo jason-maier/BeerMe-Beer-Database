@@ -1,0 +1,39 @@
+  <html ng-app='beerme' ng-controller='randomizer'>
+    <head>
+      <title> Beer Me! </title>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="/public/css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="/public/css/page.css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="/public/js/materialize.min.js"></script>
+      <script src="/public/angular.js"></script>
+      <script src="/public/angular-route.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+
+    <body ng-controller='BeerController'>
+      <h1 id='title' class='center'> <a href='/'> Beer Me </a> </h1>
+        <div class="container">
+          <form class="col s12" ng-submit='submitFunction()'>
+            <div class="row center">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">local_drink</i>
+                <input id="beerFind" type="text" ng-model='search' class="validate">
+                <label for="icon_telephone"> Find Your Beer!</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class='center'>
+          <a class="waves-effect waves-light btn-large black" href='/#/beerme' 
+          ng-click='submitFunction()'>Beer Me!</a>
+          <a class="waves-effect waves-light btn-large black" href='/#/random' ng-click='random()'>Blind Drunk!</a>
+        </div>
+        <div ng-view></div>
+  <script type='text/javascript' src='/public/app.js'></script>
+  <script type='text/javascript' src='/public/beers.js'></script>
+    </body>
+  </html>
+        

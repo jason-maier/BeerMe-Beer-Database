@@ -1,0 +1,108 @@
+html {
+	background-color: white;
+}
+
+#title {
+	font-family: 'nexa';
+	font-size: 800%;
+}
+
+#beername {
+  font-family: 'bebas';
+  padding-top: 10px;
+}
+
+#beercard {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+.beericon {
+  width: 200px;
+  height: 200px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  margin-left: -40px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 120%;
+}
+
+input[type='text']{
+  font-size: 30px;
+  font-family: 'bebas';
+}
+
+#thick {
+  font-weight: 900;
+}
+
+.descriptor {
+  font-size: 120%;
+  font-weight: 500;
+}
+
+
+body, html {
+  background: url(http://wallpapercave.com/wp/DO9v47p.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+span {
+  font-size: 110%;
+}
+
+.input-field label {
+  color: #000;
+}
+a {
+  text-decoration: none;
+  background-color: none;
+  color: black;
+}
+
+@font-face{ 
+  font-family: 'nexa';
+  src: url('NexaRustSlab-BlackShadow01-Free-webfont.eot');
+  src: url('NexaRustSlab-BlackShadow01-Free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NexaRustSlab-BlackShadow01-Free-webfont.woff2') format('woff2'),
+         url('NexaRustSlab-BlackShadow01-Free-webfont.woff') format('woff'),
+         url('NexaRustSlab-BlackShadow01-Free-webfont.ttf') format('truetype'),
+         url('NexaRustSlab-BlackShadow01-Free-webfont.svg#nexa_rust_slabblack_shadow_01') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'sansblack';
+    src: url('NexaRustSans-Black-Free-webfont.eot');
+    src: url('NexaRustSans-Black-Free-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NexaRustSans-Black-Free-webfont.woff2') format('woff2'),
+         url('NexaRustSans-Black-Free-webfont.woff') format('woff'),
+         url('NexaRustSans-Black-Free-webfont.ttf') format('truetype'),
+         url('NexaRustSans-Black-Free-webfont.svg#nexa_rust_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('BEBAS___-webfont.eot');
+    src: url('BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BEBAS___-webfont.woff') format('woff'),
+         url('BEBAS___-webfont.ttf') format('truetype'),
+         url('BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
